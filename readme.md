@@ -41,6 +41,33 @@ tsc file.ts -w
 tsc file.ts --watch
 ```
 
+## TS + Jest
+
+---
+
+```tsx
+npm i jest @types/jest ts-jest typescript -D
+```
+
+Crear jest.config.js en la raíz del proyecto y añadir la ruta de nuestros tests en roots.
+
+```json
+module.exports = {
+  "roots": [
+    "<rootDir>/test"
+  ],
+  "testMatch": [
+    "**/__tests__/**/*.+(ts|tsx|js)",
+    "**/?(*.)+(spec|test).+(ts|tsx|js)"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+}
+```
+
+[Jest](https://basarat.gitbook.io/typescript/intro-1/jest)
+
 # Tipos de datos
 
 ---
