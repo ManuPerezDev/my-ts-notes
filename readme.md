@@ -49,10 +49,10 @@ tsc file.ts --watch
 npm i jest @types/jest ts-jest typescript -D
 ```
 
-Crear jest.config.js en la raíz del proyecto y añadir la ruta de nuestros tests en roots.
+Crear jest.config.json en la raíz del proyecto y añadir la ruta de nuestros tests en roots.
 
 ```json
-module.exports = {
+{
   "roots": [
     "<rootDir>/test"
   ],
